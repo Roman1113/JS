@@ -10,7 +10,7 @@
 }
 #contact {
   font-family: "Teko", sans-serif;
-  padding-top: 10px;
+  padding-top: 60px;
   width: 100%;
   width: 100vw;
   height: auto;
@@ -28,50 +28,12 @@
   color: #fff;
 }
 .contact-section {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 .contact-section .col-md-6 {
   width: 50%;
 }
-
-.form-line {
-  border-right: 1px solid #b29999;
-  display: inline-block;
-}
-.form-line-right {
-  /* display: inline-block; */
-  float: right;
-}
-
-.form-group {
-  margin-top: 10px;
-}
-label {
-  font-size: 1.3em;
-  line-height: 1em;
-  font-weight: normal;
-}
-.form-control {
-  font-size: 1.3em;
-  color: #080808;
-}
-textarea.form-control {
-  height: 63px;
-  /* margin-top: px;*/
-}
-
-.submit {
-  font-size: 1.1em;
-  float: right;
-  width: 150px;
-  background-color: transparent;
-  color: #fff;
-}
-
-.printUser {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.userTable {
+table {
+  border-collapse: collapse;
   width: 100%;
 }
