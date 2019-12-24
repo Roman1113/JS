@@ -44,33 +44,39 @@ if(this._energy > 100){
 
 }
 
-let Bobik = new Dog("Bobik", "Лайка", 3,100);
-Bobik.ShowDog();
-Bobik.SetName("Bobik");
-Bobik.ShowDog();
-Bobik.DogPlay(50);
-Bobik.ShowDog();
-Bobik.DogEat(50);
-Bobik.ShowDog();
-Bobik.DogPlay(20);
-Bobik.ShowDog();
-
-function Save(){
-let name_in = document.querySelector(".name");
-name_in.innerHTML = localStorage.getItem("Name");
-let age_in = document.querySelector(".age");
-age_in.innerHTML = localStorage.getItem("Age");
-let breed_in = document.querySelector(".breed");
-breed_in.innerHTML = localStorage.getItem("Breed");
-let energy_in = document.querySelector(".energy");
-energy_in.innerHTML = localStorage.getItem("Energy");
+class HanterDog extends Dog{
+    constructor(name,age,breed,_energy){
+        super(name,age,breed,_energy);
+    }
 }
 
-localStorage.setItem("Name", Bobik.name);
-localStorage.setItem("Breed", Bobik.breed);
-localStorage.setItem("Age", Bobik.age);
-localStorage.setItem("Energy", Bobik._energy);
+// let Bobik = new Dog("Bobik", "Лайка", 3,100);
+// Bobik.ShowDog();
+// Bobik.SetName("Bobik");
+// Bobik.ShowDog();
+// Bobik.DogPlay(50);
+// Bobik.ShowDog();
+// Bobik.DogEat(50);
+// Bobik.ShowDog();
+// Bobik.DogPlay(20);
+// Bobik.ShowDog();
 
-nameLS = localStorage.getItem("Name");
+// function Save(){
+// let name_in = document.querySelector(".name");
+// name_in.innerHTML = localStorage.getItem("Name");
+// let age_in = document.querySelector(".age");
+// age_in.innerHTML = localStorage.getItem("Age");
+// let breed_in = document.querySelector(".breed");
+// breed_in.innerHTML = localStorage.getItem("Breed");
+// let energy_in = document.querySelector(".energy");
+// energy_in.innerHTML = localStorage.getItem("Energy");
+// }
 
-console.log("Name from LS =>", nameLS);
+// localStorage.setItem("Name", Bobik.name);
+// localStorage.setItem("Breed", Bobik.breed);
+// localStorage.setItem("Age", Bobik.age);
+// localStorage.setItem("Energy", Bobik._energy);
+
+// nameLS = localStorage.getItem("Name");
+
+// console.log("Name from LS =>", nameLS);
