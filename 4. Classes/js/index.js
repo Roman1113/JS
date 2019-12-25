@@ -50,6 +50,9 @@ class HanterDog extends Dog{
     }
 }
 
+let rex = new HanterDog("Rex", "Russian Fast", 4, 99);
+rex.ShowDog();
+
 // let Bobik = new Dog("Bobik", "Лайка", 3,100);
 // Bobik.ShowDog();
 // Bobik.SetName("Bobik");
