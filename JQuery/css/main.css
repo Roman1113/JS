@@ -1,5 +1,7 @@
 /* the tasty burger */
-body {-webkit-font-smoothing: antialiased;}
+body {
+  -webkit-font-smoothing: antialiased;
+}
 .burger-menu {
   position: relative;
   width: 50px;
@@ -8,7 +10,7 @@ body {-webkit-font-smoothing: antialiased;}
 }
 .burger {
   position: absolute;
-  background: rgba(111,111,111,1);
+  background: rgba(111, 111, 111, 1);
   width: 100%;
   height: 10px;
   top: 50%;
@@ -18,7 +20,7 @@ body {-webkit-font-smoothing: antialiased;}
 }
 .burger::before {
   position: absolute;
-  background: rgba(111,111,111,1);
+  background: rgba(111, 111, 111, 1);
   width: 50px;
   height: 10px;
   top: 20px;
@@ -27,36 +29,40 @@ body {-webkit-font-smoothing: antialiased;}
 }
 .burger::after {
   position: absolute;
-  background: rgba(111,111,111,1);
+  background: rgba(111, 111, 111, 1);
   width: 50px;
   height: 10px;
   bottom: 20px;
   content: "";
   display: block;
 }
-.burger::after, .burger::before, .burger {
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
+.burger::after,
+.burger::before,
+.burger {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
-.burger-menu.menu-on .burger::after{
-   transform: rotate(-45deg);
-   -webkit-transform: rotate(-45deg);
+.burger-menu.menu-on .burger::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   bottom: 0px;
 }
-.burger-menu.menu-on .burger::before{
-   transform: rotate(45deg);
-   -webkit-transform: rotate(45deg);
+.burger-menu.menu-on .burger::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   top: 0px;
 }
-.burger-menu.menu-on .burger{
- background: rgba(111,111,111,.0);
+.burger-menu.menu-on .burger {
+  background: rgba(111, 111, 111, 0);
 }
 /* useless css */
 .burger-menu {
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
 }
-body {background: #A4DFED;}
+body {
+  background: #a4dfed;
+}
 h1 {
   font-family: arial;
   letter-spacing: 4px;
@@ -71,4 +77,15 @@ h1 {
   font-size: 51px;
   display: block;
   text-transform: uppercase;
+}
+
+.sl__bag {
+  background: #fff;
+  color: #3498db;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 3%;
+  position: relative;
+  text-align: center;
 }
